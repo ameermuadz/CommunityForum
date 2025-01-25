@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements PostDetailsActivi
         });
 
         btnBookmarks.setOnClickListener(v -> {
-            currentPage = "bookmarks2";
+            currentPage = "bookmarks3";
             updateButtonColors();
             listenForBookmarkedPosts();
         });
