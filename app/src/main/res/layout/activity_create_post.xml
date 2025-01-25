@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:backgroundTint="#000000"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="59dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:drawableTop="@drawable/ic_back"
+            android:contentDescription="Back"/>
+
+        <TextView
+            android:id="@+id/TextSectionCFP"
+            android:layout_width="297dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Create Forum Post"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/inputPostTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cpbackground"
+        android:backgroundTint="#222222"
+        android:hint="Title"
+        android:minHeight="48dp"
+        android:paddingLeft="24dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B1A9A9" />
+
+    <EditText
+        android:id="@+id/inputPostContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/cpbackground"
+        android:gravity="top"
+        android:hint="Content"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:paddingLeft="24dp"
+        android:paddingTop="24dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B1A9A9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/switchAnonymous"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:minHeight="48dp"
+            android:text="Post Anonymously"
+            android:textColor="#FFFFFF"
+            android:thumbTint="#FFFFFF"
+            android:trackTint="@color/switch_track_color" />
+
+        <Button
+            android:id="@+id/btnSubmitPost"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="70dp"
+            android:backgroundTint="#009688"
+            android:text="Post"
+            android:textColorLink="#009688"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
